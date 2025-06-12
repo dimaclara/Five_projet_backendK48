@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -46,11 +47,17 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public List<ClientDto> findAll() {
-        return List.of();
+        return clientRepository.findAll().stream()
+                .map(ClientDto::fromEntity)
+                .collect(Collectors.toList());
     }
 
     @Override
     public void deleteById(Long id) {
-        return;
+        if(id == null){
+            log.error(" this id is null");
+            return;
+        }
+        clientRepository.deleteById(id);
     }
 }

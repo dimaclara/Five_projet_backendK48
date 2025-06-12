@@ -1,0 +1,24 @@
+#spring.application.name=gestionstock_backend
+server:
+  port: 8085
+
+spring:
+  application:
+    name: gestionstock_backend
+
+## connectivity with the postgreSQL DB
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gestionstock_BD
+    username: postgres
+    password: "#Michel2015."
+    driver-class-name: org.postgresql.Driver
+
+    ## Specify DBMS
+  jpa:
+    hibernate:
+       ddl-auto: update
+
+
+   #Hibernate DDL Auto (create, create-drop, update)
+    database: postgresql
+    show-sql: true
