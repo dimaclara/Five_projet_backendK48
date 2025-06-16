@@ -47,7 +47,7 @@ public class LigneCommandeFournisseurDto {
 
 
     // ToEntity
-    public LigneCommandeFournisseur toEntity(LigneCommandeFournisseurDto  ligneCommandeFournisseurDto) {
+    public  static LigneCommandeFournisseur toEntity(LigneCommandeFournisseurDto  ligneCommandeFournisseurDto) {
         // condition
         if (ligneCommandeFournisseurDto == null) {
             return null;

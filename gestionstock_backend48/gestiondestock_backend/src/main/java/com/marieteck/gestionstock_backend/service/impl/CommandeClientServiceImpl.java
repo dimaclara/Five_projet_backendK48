@@ -66,7 +66,7 @@ public class CommandeClientServiceImpl implements CommandeClientService {
             });
 
         }
-        if (articleErrors .isEmpty()) {
+        if (!articleErrors .isEmpty()) {
             log.warn("");
             throw new InvalidEntityException("Article is not available in DB",ErrorCodes.COMMANDE_CLIENT_ALREADY_IN_USE,articleErrors );
         }
