@@ -44,7 +44,7 @@ public class LigneCommandeClientDto {
 
 
     // ToEntity
-    public LigneCommandeClient toEntity(LigneCommandeClientDto ligneCommandeClientDto) {
+    public static LigneCommandeClient toEntity(LigneCommandeClientDto ligneCommandeClientDto) {
         if ( ligneCommandeClientDto == null) {
             return null;
             //TODO Throw an exception

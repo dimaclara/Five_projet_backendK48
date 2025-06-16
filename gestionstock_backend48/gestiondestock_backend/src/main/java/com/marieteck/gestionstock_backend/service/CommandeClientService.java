@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface CommandeClientService {
-    CommandeClientDto save(CommandeClientDto dto);
+    CommandeClientDto save(CommandeClientDto commandeClientDto);
 
     CommandeClientDto updateEtatCommande(Long idCommande, EtatCommande etatCommande);
 
