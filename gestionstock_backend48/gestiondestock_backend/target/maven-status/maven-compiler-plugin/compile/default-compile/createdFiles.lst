@@ -79,6 +79,7 @@ com\marieteck\gestionstock_backend\repository\ArticleRepository.class
 com\marieteck\gestionstock_backend\repository\UsersRepository.class
 com\marieteck\gestionstock_backend\service\impl\UsersServiceImpl.class
 com\marieteck\gestionstock_backend\validator\CommandeFournisseurValidator.class
+com\marieteck\gestionstock_backend\service\UsersServices.class
 com\marieteck\gestionstock_backend\service\impl\EnterpriseServiceImpl.class
 com\marieteck\gestionstock_backend\repository\ClientRepository.class
 com\marieteck\gestionstock_backend\repository\FournisseurRepository.class
@@ -97,7 +98,6 @@ com\marieteck\gestionstock_backend\model\Ventes$VentesBuilder.class
 com\marieteck\gestionstock_backend\validator\MvtStkValidator.class
 com\marieteck\gestionstock_backend\model\Category.class
 com\marieteck\gestionstock_backend\service\impl\ClientServiceImpl.class
-com\marieteck\gestionstock_backend\service\UsersService.class
 com\marieteck\gestionstock_backend\exception\InvalidEntityException.class
 com\marieteck\gestionstock_backend\dto\CommandeFournisseurDto$CommandeFournisseurDtoBuilder.class
 com\marieteck\gestionstock_backend\exception\InvalidOperationException.class

@@ -7,12 +7,14 @@ import com.marieteck.gestionstock_backend.model.Fournisseur;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.OneToMany;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.util.List;
 
-@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class FournisseurDto {
 
