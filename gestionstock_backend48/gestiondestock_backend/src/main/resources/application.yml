@@ -3,8 +3,8 @@ server:
   port: 8085
 pexels:
   api:
-  url: https://api.pexels.com/v1/
-  Key: Spejw9i0Z4rOwcOkv57coarUomjIvClOLWBoTpfeYC9XXZgJXOu5Gro6
+    url: https://api.pexels.com/v1/
+    key: Spejw9i0Z4rOwcOkv57coarUomjIvClOLWBoTpfeYC9XXZgJXOu5Gro6
 
 
 

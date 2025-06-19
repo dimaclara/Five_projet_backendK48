@@ -13,13 +13,16 @@ import java.util.concurrent.ExecutionException;
 @Configuration
 public class PexelConfiguration {
 
-    @Value("${pexels.apiKey}")
+    @Value("${pexels.api.key}")
     private String apiKey;
+
+    @Value("${pexels.api.url}")
+    private String baseUrl;
 
     @Bean
     public WebClient pexelsWebClient() {
         return WebClient.builder()
-                .baseUrl("https://api.pexels.com/v1/")
+                .baseUrl(baseUrl)
                 .defaultHeader(HttpHeaders.AUTHORIZATION, apiKey)
                 .build();
     }
