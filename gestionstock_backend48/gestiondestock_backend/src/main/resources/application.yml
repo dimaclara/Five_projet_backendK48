@@ -1,6 +1,13 @@
 #spring.application.name=gestionstock_backend
 server:
   port: 8085
+pexels:
+  api:
+  url: https://api.pexels.com/v1/
+  Key: Spejw9i0Z4rOwcOkv57coarUomjIvClOLWBoTpfeYC9XXZgJXOu5Gro6
+
+
+
 
 spring:
   application:

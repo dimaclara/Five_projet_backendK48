@@ -28,7 +28,7 @@ public class MvtStkDto {
 
     // FromEntity
 
-    public MvtStkDto fromEntity(MvtStk mvtStk) {
+    public static MvtStkDto fromEntity(MvtStk mvtStk) {
         // Condition
 
         if (mvtStk == null) {
@@ -47,7 +47,7 @@ public class MvtStkDto {
 
     // toEntity
 
-    public MvtStk toEntity(MvtStkDto mvtStkDto) {
+    public static MvtStk toEntity(MvtStkDto mvtStkDto) {
         // condition
         if (mvtStkDto == null) {
             return null;
