@@ -134,7 +134,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
 
-    public void delete(Long id){
+    public void deleteById(Long id){
         if (id == null) {
             log.error("id is null");
             return;

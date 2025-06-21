@@ -15,4 +15,6 @@ public interface MvtStkRepository extends JpaRepository<MvtStk, Long> {
 
     List<MvtStk> findAllByArticleId(Long idArticle);
 
+
+
 }

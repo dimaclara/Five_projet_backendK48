@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ArticleRepository extends JpaRepository<Article, Long> {
+
    Optional<Article> findByCodeArticle(String codeArticle);
 
     @Query("SELECT a FROM Article a WHERE a.category.id = :idCategory")

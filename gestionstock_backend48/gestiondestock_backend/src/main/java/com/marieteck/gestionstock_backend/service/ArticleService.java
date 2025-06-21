@@ -29,7 +29,7 @@ public interface ArticleService {
 
    List<ArticleDto> findAllArticleByIdCategory(Long idCategory);
 
-    void delete(Long id);
+    void deleteById(Long id);
 
 
 }
