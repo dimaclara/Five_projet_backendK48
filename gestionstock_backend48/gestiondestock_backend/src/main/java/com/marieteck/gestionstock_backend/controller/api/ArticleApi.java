@@ -1,71 +1,121 @@
 package com.marieteck.gestionstock_backend.controller.api;
 
 import com.marieteck.gestionstock_backend.dto.ArticleDto;
-import com.marieteck.gestionstock_backend.dto.LigneCommandeClientDto;
-import com.marieteck.gestionstock_backend.dto.LigneCommandeFournisseurDto;
-import com.marieteck.gestionstock_backend.dto.LigneVenteDto;
+
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import lombok.Value;
-import org.springdoc.core.annotations.RouterOperation;
-import org.springframework.http.HttpStatus;
+
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static com.marieteck.gestionstock_backend.utils.Constants.APP_ROOT;
 
 
 
+@RequestMapping(path = "/gestiondestock/v1/article")
 public interface ArticleApi {
 
 
-    @PostMapping(value =APP_ROOT + "/article/create",consumes = MediaType.APPLICATION_JSON_VALUE)
-    @RouterOperation(operation =@Operation(summary = "this method allows you to save or edit an article ",
-            responses ={
-                    @ApiResponse(responseCode = "200", description = "Category succefull create or modified"),
-                    @ApiResponse(responseCode = "400", description = "Invalid Article supplied "),
-                    }) )
+    @PostMapping(value =  "/create",consumes = MediaType.APPLICATION_JSON_VALUE)
+    @Operation(
+            summary = "Save or update an article",
+            description = "This method allows to save a new article or update an existing one by its ID."
+
+    )
+
 
     ArticleDto save(@RequestBody ArticleDto articleDto);
 
 
 //-------------------------------------------------------------------------------------------------
 
-    @GetMapping(value = APP_ROOT + "/article/{idArticle}",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value =  "/{idArticle}",produces = MediaType.APPLICATION_JSON_VALUE)
 
-    @RouterOperation(operation =@Operation(summary = "Find article order by Id ",
-            responses ={
-                    @ApiResponse(responseCode = "200", description = "Article found"),
-                    @ApiResponse(responseCode = "404", description = "Article not found")}) )
+    @Operation(
+            summary = "Find article order by ID",
+            description = "This method allows you to retrieve an article order by its ID.",
+            parameters = {
+                    @Parameter(
+                            name = "id",
+                            description = "ID of the article order",
+                            required = true,
+                            in = ParameterIn.PATH
+                    )
+            },
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "The article order was found"),
+                    @ApiResponse(responseCode = "404", description = "No article order found with this ID")
+            })
 
     ArticleDto findById(@PathVariable("idArticle") Long id);
 
     //----------------------------------------------------------------------------------------------
-    @GetMapping(value = APP_ROOT + "/article/all",produces = MediaType.APPLICATION_JSON_VALUE)
-    @RouterOperation(operation =@Operation(summary = "this method allow to find the list of  Article that exist in the DB ",
-            responses ={
-                    @ApiResponse(responseCode = "200", description = "the List of articles/An Empty list")
-            }))
-     List<ArticleDto> findAll();
+    @GetMapping(value =  "/all",produces = MediaType.APPLICATION_JSON_VALUE)
+    @Operation(
+            summary = "This method allows to find the list of articles that exist in the database",
+            description = "Returns all the articles stored in the database.",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "List of articles successfully retrieved",
+                            content = @Content(
+                                    mediaType = "application/json",
+                                    array = @ArraySchema(schema = @Schema(implementation = ArticleDto.class))
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "204",
+                            description = "No articles found in the database"
+                    )
+            }
+    )
+
+    List<ArticleDto> findAll();
 
     //-----------------------------------------------------------------------------------------------------
 
-    @GetMapping(value = APP_ROOT + "/article/{codeArticle}",produces = MediaType.APPLICATION_JSON_VALUE)
-    @RouterOperation(operation =@Operation(summary = "found the Article By code Articles ",
-            responses ={
-                    @ApiResponse(responseCode = "200", description = "Articles succeful found"),
-                    @ApiResponse(responseCode = "404", description = " code Articles not valid")}) )
+    @GetMapping(value = "/filter/{codeArticle}",produces = MediaType.APPLICATION_JSON_VALUE)
+    @Operation(
+            summary = "Find the article by code",
+            description = "This method allows you to search for an article using its unique code.",
+            parameters = {
+                    @Parameter(
+                            name = "codeArticle",
+                            description = "Code of the article to be retrieved",
+                            required = true,
+                            in = ParameterIn.PATH
+                    )
+            },
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "The article was successfully found"),
+                    @ApiResponse(responseCode = "404", description = "No article found with the given code")
+            })
     ArticleDto findByCodeArticle(@PathVariable("codeArticle") String codeArticle);
 
     //-----------------------------------------------------------------------------------------------
 
-    @DeleteMapping(value = APP_ROOT  + "/article/{idArticle}")
-    @RouterOperation(operation =@Operation(summary = "delete a Article by Id",
-            responses ={
-                    @ApiResponse(responseCode = "200", description = "Articles succeful delete"),
-                    @ApiResponse(responseCode = "404", description = "this id Article was not found in DB")}) )
+    @DeleteMapping(value = "/{idArticle}")
+    @Operation(
+            summary = "Delete an article by ID",
+            description = "This method allows you to delete an article from the database using its ID.",
+            parameters = {
+                    @Parameter(
+                            name = "id",
+                            description = "ID of the article to be deleted",
+                            required = true,
+                            in = ParameterIn.PATH
+                    )
+            },
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "Article successfully deleted"),
+                    @ApiResponse(responseCode = "404", description = "No article found with the given ID")
+            }
+    )
     void deleteById(@PathVariable("idArticle") Long id);
 }

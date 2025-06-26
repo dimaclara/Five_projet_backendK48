@@ -5,10 +5,12 @@ import com.marieteck.gestionstock_backend.dto.ClientDto;
 import com.marieteck.gestionstock_backend.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @Service
+@RestController
 public class ClientController implements ClientApi {
 
 

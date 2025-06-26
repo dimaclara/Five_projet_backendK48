@@ -35,7 +35,7 @@ public class SwaggerConfiguration {
              .servers(List.of(
                      new Server()
                              .description("Api entry point" )
-                             .url(Constants.APP_ROOT + "/**")
+                             .url(Constants.APP_ROOT)
 
 
                      ));

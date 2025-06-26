@@ -2,9 +2,9 @@ package com.marieteck.gestionstock_backend.utils;
 
 public interface Constants {
 
-    public static String APP_ROOT = "gestiondestock/v1";
+    public static String APP_ROOT = "/gestiondestock/v1";
 
-    String COMMANDE_FOURNISSEUR_ENDPOINT = APP_ROOT + "/commandesfournisseurs";
+   /** String COMMANDE_FOURNISSEUR_ENDPOINT = APP_ROOT + "/commandesfournisseurs";
     String CREATE_COMMANDE_FOURNISSEUR_ENDPOINT = COMMANDE_FOURNISSEUR_ENDPOINT + "/create";
     String FIND_COMMANDE_FOURNISSEUR_BY_ID_ENDPOINT = COMMANDE_FOURNISSEUR_ENDPOINT + "/{idCommandeFournisseur}";
     String FIND_COMMANDE_FOURNISSEUR_BY_CODE_ENDPOINT = COMMANDE_FOURNISSEUR_ENDPOINT + "/filter/{codeCommandeFournisseur}";
@@ -17,5 +17,5 @@ public interface Constants {
 
     String UTILISATEUR_ENDPOINT = APP_ROOT + "/utilisateurs";
 
-    String VENTES_ENDPOINT = APP_ROOT + "/ventes";
+    String VENTES_ENDPOINT = APP_ROOT + "/ventes";**/
 }
