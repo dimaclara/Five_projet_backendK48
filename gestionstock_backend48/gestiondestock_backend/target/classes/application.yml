@@ -24,8 +24,20 @@ spring:
   jpa:
     hibernate:
        ddl-auto: update
+    open-in-view: false
+
 
 
    #Hibernate DDL Auto (create, create-drop, update)
     database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE

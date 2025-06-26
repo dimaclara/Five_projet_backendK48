@@ -11,7 +11,7 @@ import static com.marieteck.gestionstock_backend.utils.Constants.APP_ROOT;
 public interface FournisseurApi {
 
     @PostMapping(value = APP_ROOT + "/fournisseur/create",consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    FournisseurDto save(@RequestBody FournisseurDto dto);
+    FournisseurDto save(@RequestBody FournisseurDto fournisseurDto);
 
 
     @GetMapping (value = APP_ROOT + "/fournisseur/{idFournisseur}", produces = MediaType.APPLICATION_JSON_VALUE)

@@ -12,8 +12,9 @@ import java.util.List;
 @RestController
 public class ArticleController implements ArticleApi {
 
+
+    private final ArticleService articleService;
     @Autowired
-    private ArticleService articleService;
     public ArticleController(ArticleService articleService) {
         this.articleService = articleService;
     }

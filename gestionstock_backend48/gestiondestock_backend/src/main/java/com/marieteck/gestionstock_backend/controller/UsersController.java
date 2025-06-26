@@ -11,8 +11,9 @@ import java.util.List;
 @RestController
 public class UsersController implements UsersApi {
 
+
+    private final UsersServices usersServices;
     @Autowired
-    private UsersServices usersServices;
     public UsersController(UsersServices usersServices) {
         this.usersServices = usersServices;
     }

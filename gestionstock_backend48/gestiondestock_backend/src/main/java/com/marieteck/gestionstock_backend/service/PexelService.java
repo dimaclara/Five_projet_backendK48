@@ -6,6 +6,5 @@ import java.io.InputStream;
 public interface PexelService {
 
 
-
     String savePhoto(String keyword);
 }

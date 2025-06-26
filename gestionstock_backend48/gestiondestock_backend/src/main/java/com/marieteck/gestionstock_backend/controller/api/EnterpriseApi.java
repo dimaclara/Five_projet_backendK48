@@ -11,7 +11,7 @@ import static com.marieteck.gestionstock_backend.utils.Constants.APP_ROOT;
 public interface EnterpriseApi {
 
     @PostMapping(value = APP_ROOT + "/enterprise/create",consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
-    EnterpriseDto save(@RequestBody EnterpriseDto dto);
+    EnterpriseDto save(@RequestBody EnterpriseDto enterpriseDto);
 
     @GetMapping (value = APP_ROOT + "/enterprise/{idEnterprise}", produces = MediaType.APPLICATION_JSON_VALUE)
     EnterpriseDto findById(@PathVariable("idEnterprise") Long id);

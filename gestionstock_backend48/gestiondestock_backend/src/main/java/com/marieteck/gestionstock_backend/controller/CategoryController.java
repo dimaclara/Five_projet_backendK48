@@ -11,9 +11,9 @@ import java.util.List;
 
 public class CategoryController implements CategoryApi {
 
-    @Autowired
-    private CategoryService categoryService;
 
+    private final CategoryService categoryService;
+    @Autowired
     public CategoryController(CategoryService categoryService) {
         this.categoryService = categoryService;
     }

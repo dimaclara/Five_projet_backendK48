@@ -10,6 +10,7 @@ com\marieteck\gestionstock_backend\model\EtatCommande.class
 com\marieteck\gestionstock_backend\utils\Constants.class
 com\marieteck\gestionstock_backend\model\LigneCommandeClient.class
 com\marieteck\gestionstock_backend\dto\AddressDto.class
+com\marieteck\gestionstock_backend\config\SwaggerConfiguration.class
 com\marieteck\gestionstock_backend\controller\ArticleController.class
 com\marieteck\gestionstock_backend\dto\AddressDto$AddressDtoBuilder.class
 com\marieteck\gestionstock_backend\validator\CommandeClientValidator.class
@@ -38,6 +39,7 @@ com\marieteck\gestionstock_backend\dto\ClientDto.class
 com\marieteck\gestionstock_backend\model\AbstractEntity.class
 com\marieteck\gestionstock_backend\dto\UsersDto.class
 com\marieteck\gestionstock_backend\dto\LigneVenteDto$LigneVenteDtoBuilder.class
+com\marieteck\gestionstock_backend\controller\api\PexelApi.class
 com\marieteck\gestionstock_backend\repository\CategoryRepository.class
 com\marieteck\gestionstock_backend\model\LigneCommandeFournisseur.class
 com\marieteck\gestionstock_backend\service\MvtStkService.class
@@ -61,7 +63,6 @@ com\marieteck\gestionstock_backend\controller\api\VentesApi.class
 com\marieteck\gestionstock_backend\service\VentesService.class
 com\marieteck\gestionstock_backend\service\CommandeClientService.class
 com\marieteck\gestionstock_backend\controller\ClientController.class
-com\marieteck\gestionstock_backend\controller\api\PexelControllerApi.class
 com\marieteck\gestionstock_backend\service\impl\PexelServiceImpl.class
 com\marieteck\gestionstock_backend\service\FournisseurService.class
 com\marieteck\gestionstock_backend\validator\EnterpriseValidator.class
