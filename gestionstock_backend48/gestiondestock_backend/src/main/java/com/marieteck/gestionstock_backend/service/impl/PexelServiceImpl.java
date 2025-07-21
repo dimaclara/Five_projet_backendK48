@@ -3,9 +3,10 @@ package com.marieteck.gestionstock_backend.service.impl;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marieteck.gestionstock_backend.service.PexelService;
-import lombok.RequiredArgsConstructor;
 
-import org.springframework.beans.factory.annotation.Value;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -13,15 +14,15 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
 
-@RequiredArgsConstructor
+@Slf4j
 public class PexelServiceImpl implements PexelService {
 
 
-    @Value("${pexels.api.key}")
-    private String apiKey;
 
-    private WebClient webClient;
-
+    private  final WebClient webClient;
+    public PexelServiceImpl(@Qualifier("pexelsWebClient") WebClient webClient) {
+        this.webClient = webClient;
+    }
 
     @Override
 
@@ -51,8 +52,9 @@ public class PexelServiceImpl implements PexelService {
 
 
         }catch (Exception e){
-            e.printStackTrace();
+            log.error("Erreur lors du parsing de la réponse Pexels", e);
             return null;
+
 
         }
 

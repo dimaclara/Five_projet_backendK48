@@ -27,7 +27,7 @@ public class UsersServiceImpl implements UsersServices {
     @Override
     public UsersDto save(UsersDto usersDto) {
         List<String> errors = UsersValidators.validate(usersDto);
-        if (errors == null) {
+        if (!errors.isEmpty()) {
             log.error("Users is not valid");
             return null;
         }
@@ -40,7 +40,7 @@ public class UsersServiceImpl implements UsersServices {
     @Override
     public UsersDto findById(Long id) {
         if (id == null) {
-            log.error("Id is null");
+            log.error("Id of this user is null");
             return null;
 
         }

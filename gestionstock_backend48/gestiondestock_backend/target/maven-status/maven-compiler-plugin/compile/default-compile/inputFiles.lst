@@ -1,6 +1,11 @@
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\config\ApplicationRequestFilter.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\config\ConfigurationSecurityApplication.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\config\PexelConfiguration.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\config\SwaggerConfiguration.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\AdminTokenController.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\AdminTokenApi.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\ArticleApi.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\AuthenticationApi.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\CategoryApi.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\ClientApi.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\CommandeClientApi.java
@@ -12,6 +17,7 @@ C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend4
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\UsersApi.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\api\VentesApi.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\ArticleController.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\AuthenticationController.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\CategoryController.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\ClientController.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\CommandeClientController.java
@@ -24,6 +30,11 @@ C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend4
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\controller\VentesController.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\AddressDto.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\ArticleDto.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\auth\AuthenticationRequest.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\auth\AuthenticationResponse.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\auth\ExtendedUser.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\auth\TokenRequest.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\auth\TokenResponse.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\CategoryDto.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\ClientDto.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\dto\CommandeClientDto.java
@@ -47,6 +58,7 @@ C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend4
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\AbstractEntity.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\Address.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\Article.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\AuthToken.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\Category.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\Client.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\CommandeClient.java
@@ -64,6 +76,7 @@ C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend4
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\Users.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\model\Ventes.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\repository\ArticleRepository.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\repository\AuthTokenRepository.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\repository\CategoryRepository.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\repository\ClientRepository.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\repository\CommandeClientRepository.java
@@ -78,6 +91,8 @@ C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend4
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\repository\UsersRepository.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\repository\VentesRepository.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\ArticleService.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\auth\CustomUserDetailsService.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\AuthTokenService.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\CategoryService.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\ClientService.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\CommandeClientService.java
@@ -85,6 +100,7 @@ C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend4
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\EnterpriseService.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\FournisseurService.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\impl\ArticleServiceImpl.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\impl\AuthTokenServiceImpl.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\impl\CategoryServiceImpl.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\impl\ClientServiceImpl.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\impl\CommandeClientServiceImpl.java
@@ -100,6 +116,7 @@ C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend4
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\UsersServices.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\service\VentesService.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\utils\Constants.java
+C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\utils\JwtUtils.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\validator\ArticleValidator.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\validator\CategoryValidator.java
 C:\Users\User\IdeaProjects\APIweb48\Five_projet_backendK48\gestionstock_backend48\gestiondestock_backend\src\main\java\com\marieteck\gestionstock_backend\validator\ClientValidator.java

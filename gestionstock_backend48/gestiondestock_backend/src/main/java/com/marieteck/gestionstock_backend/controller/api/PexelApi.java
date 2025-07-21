@@ -10,4 +10,5 @@ public interface PexelApi {
 
     @PostMapping(value = APP_ROOT + "/pexel/create",consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     String savePhoto(@RequestBody String keyword);
+    
 }
