@@ -17,7 +17,7 @@ public class FournisseurValidator {
             errors.add("pleasethe first name is mandatory");
             errors.add("please enter the fournisseur mail");
             errors.add("please insert photo");
-            errors.add("please enter the fournisseur telephone number");
+            errors.add("please enter the fournisseurs telephone number");
             errors.add("please enter the fournisseur address");
             errors.add("please enter the fournisseur postale code");
 
