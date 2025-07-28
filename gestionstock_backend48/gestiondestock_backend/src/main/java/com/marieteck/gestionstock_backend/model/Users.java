@@ -32,7 +32,7 @@ public class Users extends AbstractEntity {
     private Instant dateDeNaissance;
 
     @Column(name = "motdepasse")
-    private String moteDePasse;
+    private String motDePasse;
 
     @Embedded
     private Address address;

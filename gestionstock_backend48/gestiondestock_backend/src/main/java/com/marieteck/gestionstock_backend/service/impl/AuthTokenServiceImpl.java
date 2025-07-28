@@ -308,7 +308,7 @@ public class AuthTokenServiceImpl implements AuthTokenService {
 
         // Générer un mot de passe temporaire
         String tempPassword = generateTempPassword();
-        newUser.setMoteDePasse(passwordEncoder.encode(tempPassword));
+        newUser.setMotDePasse(passwordEncoder.encode(tempPassword));
 
         newUser = usersRepository.save(newUser);
 

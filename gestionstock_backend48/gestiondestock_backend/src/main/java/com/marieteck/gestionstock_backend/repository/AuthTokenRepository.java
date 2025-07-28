@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface AuthTokenRepository extends JpaRepository<AuthToken, Long> {
+
     Optional<AuthToken> findByTokenAndIsActiveTrue(String token);
 
     List<AuthToken> findByUserAndIsActiveTrue(Users user);

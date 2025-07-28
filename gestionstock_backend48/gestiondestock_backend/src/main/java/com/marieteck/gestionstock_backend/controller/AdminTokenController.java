@@ -1,6 +1,7 @@
 package com.marieteck.gestionstock_backend.controller;
 
 
+import com.marieteck.gestionstock_backend.controller.api.AdminTokenApi;
 import com.marieteck.gestionstock_backend.dto.auth.TokenRequest;
 import com.marieteck.gestionstock_backend.dto.auth.TokenResponse;
 import com.marieteck.gestionstock_backend.exception.EntityNotFoundException;
@@ -22,7 +23,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-public class AdminTokenController {
+public class AdminTokenController implements AdminTokenApi {
 
     private final AuthTokenService authTokenService;
     private final UsersServices usersService;

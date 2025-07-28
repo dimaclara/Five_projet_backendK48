@@ -27,7 +27,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         List<SimpleGrantedAuthority> authorities = new ArrayList<>();
         usersDto.getRoles().forEach(role -> authorities.add(new SimpleGrantedAuthority(role.getRoleName())));
 
-        return new ExtendedUser(usersDto.getEmail(), usersDto.getMoteDePasse(), usersDto.getEntrepriseDto().getId(), authorities);
+        return new ExtendedUser(usersDto.getEmail(), usersDto.getMotDePasse(), usersDto.getEntrepriseDto().getId(), authorities);
     }
 
 }

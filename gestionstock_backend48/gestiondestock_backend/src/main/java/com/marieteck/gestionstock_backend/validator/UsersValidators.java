@@ -28,7 +28,7 @@ public class UsersValidators {
         if (usersDto == null || !StringUtils.hasLength(usersDto.getPrenom())) {
             errors.add("please enter  the user's first name");
         }
-        if (usersDto == null || !StringUtils.hasLength(usersDto.getMoteDePasse())) {
+        if (usersDto == null || !StringUtils.hasLength(usersDto.getMotDePasse())) {
             errors.add("please enter  the user's mote de-passe");
         }
         if (usersDto == null || !StringUtils.hasLength(usersDto.getEmail())) {

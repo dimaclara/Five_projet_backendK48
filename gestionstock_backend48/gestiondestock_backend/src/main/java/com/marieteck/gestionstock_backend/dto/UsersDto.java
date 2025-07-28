@@ -31,7 +31,7 @@ public class UsersDto {
     private Instant dateDeNaissance;
 
 
-    private String moteDePasse;
+    private String motDePasse;
 
 
     private AddressDto addressDto;
@@ -55,7 +55,7 @@ public class UsersDto {
                 .prenom(users.getPrenom())
                 .email(users.getEmail())
                 .dateDeNaissance(users.getDateDeNaissance())
-                .moteDePasse(users.getMoteDePasse())
+                .motDePasse(users.getMotDePasse())
                 .addressDto(AddressDto.fromEntity(users.getAddress()))
                 .entrepriseDto(EnterpriseDto.fromEntity(users.getEnterprise()))
                 .roles(
@@ -85,7 +85,7 @@ public class UsersDto {
         users.setPrenom(usersDto.getPrenom());
         users.setEmail(usersDto.getEmail());
         users.setDateDeNaissance(usersDto.getDateDeNaissance());
-        users.setMoteDePasse(usersDto.getMoteDePasse());
+        users.setMotDePasse(usersDto.getMotDePasse());
         users.setAddress(AddressDto.toEntity(usersDto.getAddressDto()));
         users.setEnterprise(EnterpriseDto.toEntity(usersDto.getEntrepriseDto()));
         users.setPhoto(usersDto.getPhoto());

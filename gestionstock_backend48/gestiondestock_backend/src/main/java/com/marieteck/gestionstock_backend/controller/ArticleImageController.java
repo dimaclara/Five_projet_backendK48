@@ -1,5 +1,6 @@
 package com.marieteck.gestionstock_backend.controller;
 
+import com.marieteck.gestionstock_backend.controller.api.ArticleImageApi;
 import com.marieteck.gestionstock_backend.dto.ArticleDto;
 import com.marieteck.gestionstock_backend.dto.PexelsPhotoDto;
 import com.marieteck.gestionstock_backend.model.ImageSize;
@@ -15,7 +16,7 @@ import java.util.List;
 @Slf4j
 @AllArgsConstructor
 
-public class ArticleImageController {
+public class ArticleImageController implements ArticleImageApi {
     private final ArticleImageService articleImageService;
 
 //    @Override
