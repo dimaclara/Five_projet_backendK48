@@ -19,6 +19,9 @@ public interface ArticleRepository extends JpaRepository<Article, Long> {
    List<ArticleDto> findAllArticleByIdCategory(@Param("idArticle") Long idCategory);
 
 
+    long countByPhotoIsNotNullAndPhotoNot(String emptyString);
+
+
 
 
 
